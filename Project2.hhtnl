@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>A Survey form</title><link rel="stylesheet" href="styles.css" /></head>
+<body><h1 id="title">A Survey Form</h1><p id="description">Please fill the form correctly :)</p><form id="survey-form"><fieldset><label id="name-label" >Enter name    <input id="name" type="text" required placeholder="enter name" /><br>
+</label><label id="email-label">Enter email  <input id="email" type="email" placeholder="enter email" required/></label><br><label id="number-label">Enter the number  <input id="number" type="number" min="1" max="999" placeholder="number" required /></label> 
+</fieldset><fieldset>
+  <legend>How was survey?</legend>
+
+  <label>
+    <input id="annoying" name="survey" type="radio" value="1" />
+    Annoying
+  </label>
+
+  <label>
+    <input id="very-annoying" name="survey" type="radio" value="2" />
+    Very Annoying
+  </label>
+
+  <label>
+    <input id="yes" name="survey" type="radio" value="3" />
+    YES
+  </label>
+</fieldset>
+
+<fieldset>
+  <label for="movie">What is your favorite movie series?</label>
+  <select id="dropdown" name="movie">
+    <option value="">(select one)</option>
+    <option value="1">Star Wars</option>
+    <option value="2">Harry Potter series</option>
+    <option value="3">Lord of the Rings</option>
+    <option value="4">Planet of the Apes</option>
+  </select><br/>
+ <p>What do you like about the series?</p>
+  <label>
+    <input type="checkbox" name="reasons" value="comedy" />
+    Comedy
+  </label>
+  <label>
+    <input type="checkbox" name="reasons" value="romance" />
+    Romance
+  </label>
+  <label>
+    <input type="checkbox" name="reasons" value="thriller" />
+    Thriller
+  </label>
+  <br /><br />
+
+  <label for="bio">Why do you like this movie series?</label>
+  <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like this movie because..."></textarea>
+</fieldset>
+<input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</html>
